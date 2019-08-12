@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="ExternalSystem" linkedProjectPath="$MODULE_DIR$/../kotlin" rootProjectPath="$MODULE_DIR$/../kotlin" />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+    </content>
+    <orderEntry type="jdk" jdkName="9" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+    <orderEntry type="module-library">
+      <library name="kotlin-shell-kts">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/kotlin-shell-kts-0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="kotlin-shell-core">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/kotlin-shell-core-0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="kotlin-main-kts" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0-M2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-io-jvm:0.1.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-io:0.1.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.zeroturnaround:zt-exec:1.11" level="project" />
+    <orderEntry type="library" name="org.apache.logging.log4j:log4j-slf4j-impl:2.12.1" level="project" />
+  </component>
+</module>

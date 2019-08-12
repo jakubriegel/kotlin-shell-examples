@@ -1,0 +1,16 @@
+# kotlin
+kotlin/.gradle
+kotlin/.idea
+kotlin/build
+kotlin/out
+kotlin/src/main/kotlin/Sandbox.kt
+
+# kts
+kts/.idea
+kts/lib/*.jar
+kts/resources/res
+kts/src/sandbox.sh.kts
+
+# general
+.idea
+out
