@@ -1,16 +1,14 @@
-# kotlin
-kotlin/.gradle
-kotlin/.idea
+.idea
+**/.idea/
+.gradle
+.gradletasknamecache
+build
+out
 kotlin/build
 kotlin/out
-kotlin/src/main/kotlin/Sandbox.kt
-
-# kts
-kts/.idea
-kts/lib/*.jar
-kts/resources/res
-kts/src/sandbox.sh.kts
-
-# general
-.idea
-out
+kts/build
+kts/out
+/kotlin/src/main/kotlin/Sandbox.kt
+/kts/src/main/kotlin/sandbox.sh.kts
+/kts/src/main/resources/res/
+/.idea/

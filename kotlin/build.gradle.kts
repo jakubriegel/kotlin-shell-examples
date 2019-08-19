@@ -1,22 +1,15 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.50-eap-54"
+    kotlin("jvm")
     application
 }
 
-group = "eu.jrie.jetbrains.kotlinshell.examples.kotlin"
-version = "0.2"
-
-repositories {
-    maven("https://dl.bintray.com/kotlin/kotlin-eap")
-    mavenCentral()
-    maven("https://dl.bintray.com/jakubriegel/kotlin-shell")
-}
-
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
-    implementation("eu.jrie.jetbrains:kotlin-shell-core:0.1")
+    compileOnly(kotlin("stdlib-jdk8"))
+    compileOnly(kotlin("reflect"))
+
+    implementation("eu.jrie.jetbrains:kotlin-shell-core:0.2-dev")
     implementation("org.slf4j:slf4j-nop:1.7.27")
 }
 
@@ -24,9 +17,19 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 
-val sampleClass: String? by project
+val sample: String? by project
+val logs: String? by project
+
+configurations.all {
+    resolutionStrategy.dependencySubstitution {
+        if (logs?.toBoolean() == true) {
+            substitute(module("org.slf4j:slf4j-nop"))
+                    .with(module("org.apache.logging.log4j:log4j-slf4j-impl:2.12.0"))
+        }
+    }
+}
 
 val execute by tasks.creating(JavaExec::class) {
-    main = "${project.group}.${sampleClass ?: null}"
+    main = "${project.group}.kotlin.$sample"
     classpath = sourceSets["main"].runtimeClasspath
 }

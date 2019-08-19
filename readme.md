@@ -8,20 +8,20 @@ The examples can be run both via command line and Intellij IDEA
 
 type:
 ```shell
-cd kotlin
-./gradlew -PsampleClass=[RELATIVE-CLASS-PATH] execute [--args="ARGS"]
+./gradlew -Psample=[RELATIVE-CLASS-PATH] -Plogs=true execute [--args="ARGS"]
 ```
 
 example:
 ```shell
 $ cd kotlin
-$ ./gradlew -PsampleClass=basic.HelloKt execute
+$ ./gradlew -Psample=basic.HelloKt execute
 hello world!
 ```
 
+To see logs add `-Plogs=true` parameter.
 
 ### kts
-To run scripts you first need [kshell](https://github.com/jakubriegel/kshell) installed
+To run scripts you need [kshell](https://github.com/jakubriegel/kshell) installed
 
 type:
 ```shell
@@ -38,19 +38,17 @@ hello world!
 
 ## run it with Intellij IDEA
 ### kotlin
-Import Gradle project and you will be able to run selected functions
+After importing Gradle project you will be able to run `main()` functions in sample classes.
 
 ### kts
-You need to manually add `kotlin-shell-kts` dependencies to Intellij. You can find the full list under `kts/lib/kotlin-shell-kts-dependencies`.
-Then you will be able to run the scripts
+After importing Gradle project you will be able to run script files.
 
 ## logging
-Kotlin Shell features `slf4j` logging interface
+Kotlin Shell features `slf4j` logging interface. 
+All examples use NOP logger by default. Configurations for loggers can be found under `resources/log4j2.xml`.
 
 ### kotlin
-By default Gradle project import NOP logger. You can change this dependency to see logs.
+By default Gradle project imports NOP logger. To change it use these [instructions](#run-it-with-command-line).
 
 ### kts
-'kshell' uses NOP logger. 
-
-In Intellij you can see logs after providing logger implementation and changing settings under `kts/resources/log4j2.xml`. By default all logs are turned off.
+Both `kshell` and Gradle uses NOP logger by default. You can change this dependency manually to see the logs.
