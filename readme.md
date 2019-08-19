@@ -26,13 +26,13 @@ To run scripts you need [kshell](https://github.com/jakubriegel/kshell) installe
 type:
 ```shell
 cd kts
-kshell src/eu/jrie/jetbrains/kotlinshell/examples/kts/[PATH-TO-SAMPLE] [ARGS]
+kshell src/kotlin/[PATH-TO-SAMPLE] [ARGS]
 ```
 
 example:
 ```shell
 $ cd kts
-$ kshell src/eu/jrie/jetbrains/kotlinshell/examples/kts/basic/hello.sh.kts
+$ kshell src/kotlin/basic/hello.sh.kts
 hello world!
 ```
 
