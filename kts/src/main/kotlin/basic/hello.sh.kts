@@ -6,6 +6,6 @@ shell {
     "echo hello world!"()
 }
 
-// or
+// or non suspending
 
-"echo hello world".process().run()
+"echo hello world!".process().run()
