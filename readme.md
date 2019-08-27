@@ -1,7 +1,12 @@
 # Kotlin Shell Examples
 This repository provides examples on using [Kotlin Shell](https://github.com/jakubriegel/kotlin-shell) library
 
-The examples can be run both via command line and Intellij IDEA
+The examples can be run both via command line and Intellij IDEA.
+
+All examples from `kotlin` can be executes as scripts and all examples from `kts` can be executed as part of Kotlin code. 
+
+> As scripting support in Intellij IDEA is still under development, examples may not run properly on every versions. 
+> Despite the highlighting and completion should work fine.
 
 ## run it with command line
 ### kotlin
@@ -52,3 +57,7 @@ By default Gradle project imports NOP logger. To change it use these [instructio
 
 ### kts
 Both `kshell` and Gradle uses NOP logger by default. You can change this dependency manually to see the logs.
+
+## side by side examples
+In `sidebyside` package there are located side by side examples of scripts written witH Kotlin Shell abd Bash. 
+They are always equal in terms of evaluation.

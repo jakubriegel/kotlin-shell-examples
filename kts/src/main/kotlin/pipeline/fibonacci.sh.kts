@@ -9,6 +9,7 @@ val result: ProcessChannel = Channel(n)
 val buffer: ProcessChannel = Channel(2)
 
 shell {
+
     val fibonacci = contextLambda { ctx ->
         repeat(n) {
             val a = ctx.stdin.receive().readText().toLong()

@@ -1,9 +1,9 @@
 #!/usr/bin/env kshell
 
-import eu.jrie.jetbrains.kotlinshell.shell.up
+// this script initializes or bring back to initial form resources/res directory
 
 shell {
-    cd("../resources")
+    cd("src/main/resources")
     file("res").deleteRecursively()
 
     val loremIpsum = StringBuilder().let {

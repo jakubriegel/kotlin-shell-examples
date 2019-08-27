@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-VARIABLE=hello kshell src/env/readEnv.sh.kts
+VARIABLE=hello kshell src/main/kotlin/env/readEnv.sh.kts

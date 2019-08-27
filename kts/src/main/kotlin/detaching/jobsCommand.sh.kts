@@ -1,6 +1,6 @@
 #!/usr/bin/env kshell
 
-package detach
+package detaching
 
 val echo = "echo hello".process()
 

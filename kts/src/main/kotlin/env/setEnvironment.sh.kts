@@ -3,9 +3,9 @@
 package env
 
 shell {
-    // set shell environment variable that will be inherited to sub shells
+    // set shell environment variable that will be inherited to sub shell
     export("VAR_1" to "abc")
-    // set shell variable that will not be inherited to sub shells
+    // set shell variable that will not be inherited to sub shell
     variable("VAR_2" to "def")
 
     println(environment["VAR_1"]) // abc

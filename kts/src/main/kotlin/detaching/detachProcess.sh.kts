@@ -1,6 +1,6 @@
 #!/usr/bin/env kshell
 
-package detach
+package detaching
 
 // with blocking api
 val process = detach("echo hello".process()).first()
