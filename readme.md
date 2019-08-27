@@ -48,6 +48,10 @@ After importing Gradle project you will be able to run `main()` functions in sam
 ### kts
 After importing Gradle project you will be able to run script files.
 
+### file template
+File `kts/fileTemplate_sh_kts` contains template definition for Intellij. 
+To use it put this file in `~/Library/Preferences/IntelliJIdea/fileTemplates` with name `KotlinShell.sh.kts`.
+
 ## logging
 Kotlin Shell features `slf4j` logging interface. 
 All examples use NOP logger by default. Configurations for loggers can be found under `resources/log4j2.xml`.
