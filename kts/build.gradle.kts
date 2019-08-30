@@ -7,5 +7,5 @@ dependencies {
     compileOnly(kotlin("reflect"))
     implementation(kotlin("script-runtime"))
 
-    implementation("eu.jrie.jetbrains:kotlin-shell-kts:0.2-dev")
+    implementation("eu.jrie.jetbrains:kotlin-shell-kts:0.2")
 }
