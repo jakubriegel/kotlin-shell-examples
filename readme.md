@@ -63,5 +63,5 @@ By default Gradle project imports NOP logger. To change it use these [instructio
 Both `kshell` and Gradle uses NOP logger by default. You can change this dependency manually to see the logs.
 
 ## side by side examples
-In `sidebyside` package there are located side by side examples of scripts written witH Kotlin Shell abd Bash. 
+In `sidebyside` package there are located side by side examples of scripts written with Kotlin Shell and Bash. 
 They are always equal in terms of evaluation.
